@@ -29,14 +29,14 @@ Todo List Design recipe
 3. Create examples as tests
   task = ToDoList.new
   task.add_todo("Clean")
-  task.list # => "Clean"
+  task.list # => ["Clean"]
 
   task = ToDoList.new
-  task.list # fails with "No todo's set"
+  task.list # fails with "No todo added"
 
   task = ToDoList.new
   task.add_todo("Clean)
-  task.completed("Clean") # => say that the todo_id is completed then remove from @todo
+  task.completed("Clean") # => say that the todo is completed then remove from @todo
 
 4. implement the behaviour
   Follow the TDD red, green, refactor process
