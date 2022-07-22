@@ -21,7 +21,7 @@ Todo List Design recipe
     def list
       #shows list of todo's
     end
-    def completed
+    def completed(todo) #todo is a string
       #mark tasks as complete and remove from todo's list
     end
   end

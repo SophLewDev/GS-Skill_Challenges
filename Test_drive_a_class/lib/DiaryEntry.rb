@@ -34,6 +34,3 @@ class DiaryEntry
 end
 
 diary = DiaryEntry.new("title", "one, two, three")
-puts diary.reading_chunk(2,1)
-puts diary.reading_chunk(1,1)
-puts diary.reading_chunk(2,1)
