@@ -31,11 +31,11 @@ class Diary
   def find_best_entry_for_reading_time(wpm, minutes)
         time_to_read_in  = wpm * minutes
         output = []
-        closes = 0
+        closest = 0
         @diary_entries.each{ |entry| 
           if entry.reading_time(wpm) <= time_to_read_in
-            if entry.reading_time(wpm) > closes
-              closes = entry.reading_time(wpm)
+            if entry.reading_time(wpm) > closest
+              closest = entry.reading_time(wpm)
               output << entry
             end
           end
