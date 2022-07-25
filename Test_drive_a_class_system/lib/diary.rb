@@ -13,7 +13,7 @@ class Diary
 
   def count_words
     output = []
-    p  @diary_entries
+    @diary_entries
     @diary_entries.each{ |entry|
       entry.count_words > 1 ? output << "#{entry.title} has #{entry.count_words} word(s)." : output << "#{entry.title} has #{entry.count_words} word."
     }
