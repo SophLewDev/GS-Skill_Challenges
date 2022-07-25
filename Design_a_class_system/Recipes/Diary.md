@@ -244,6 +244,12 @@ Diary design recipe
   contact.name # => "Sophie"
   contact.number # => "12345"
 
+  Diary
+  diary = Diary.new
+  diary.entries # = > []
+  diary.todos # = > []
+  diary.contacts # = > []
+
 5. Implement behaviour
   After each test, follow the test-driving process of red, green, refactor
 

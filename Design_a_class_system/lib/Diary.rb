@@ -33,7 +33,7 @@ class Diary
        }
     end
     def reading_time(wpm, minutes)
-      time = wpm*minutes
+      time = wpm*minutes.to_f
       entries_within_time = []
       @entries.map.select { |entry|
         entries_within_time << entry if entry.count_words <= time
